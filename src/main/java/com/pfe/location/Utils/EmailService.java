@@ -28,13 +28,13 @@ public class EmailService {
        Session session = Session.getDefaultInstance(properties);
        MimeMessage message = new MimeMessage(session);
 
-       message.setFrom(new InternetAddress("aymenomri14.03@gmail.com"));
+       message.setFrom(new InternetAddress("aymenomri14.56@gmail.com"));
        message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
        message.setSubject(subject);
        message.setText(body);
 
        Transport transport = session.getTransport("smtp");
-       transport.connect("smtp.gmail.com", "aymenomri14.03@gmail.com", "spdnfmyfguxtwlnv");
+       transport.connect("smtp.gmail.com", "aymenomri14.56@gmail.com", "usryofbijrhretee");
        transport.sendMessage(message, message.getAllRecipients());
        transport.close();
    }
